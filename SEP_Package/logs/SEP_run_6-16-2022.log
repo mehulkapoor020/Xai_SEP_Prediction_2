@@ -1,0 +1,10 @@
+Test default models for first classification type FC_S and for all time windows: 12 to 72..
+Running classification test type: FC_S  training for h = 12 hour ahead
+testing data file: data/events_fc_testing_12.csv
+[2022-06-16 17:43:36] Building model for: default_models\sep_model_fc_12hr\model_weights 
+Importing packages..
+Importing packages..
+Test default models for first classification type FC_S and for all time windows: 12 to 72..
+Running classification test type: FC_S  training for h = 12 hour ahead
+testing data file: data/events_fc_testing_12.csv
+[2022-06-16 18:02:00] Building model for: default_models\sep_model_fc_12hr\model_weights 

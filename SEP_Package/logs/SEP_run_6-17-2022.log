@@ -1,0 +1,601 @@
+Test default models for first classification type FC_S and for all time windows: 12 to 72..
+Running classification test type: FC_S  training for h = 12 hour ahead
+testing data file: data/events_fc_testing_12.csv
+[2022-06-17 12:14:46] Building model for: default_models\sep_model_fc_12hr\model_weights 
+[2022-06-17 12:14:48] Loading weights from: default_models\sep_model_fc_12hr\model_weights 
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_1 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional (Bidirectiona  (None, 12, 800)          1603200   
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten (Flatten)           (None, 200)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization (BatchN  (None, 1)                4         
+ ormalization)                                                   
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:15:09] Saving result to file: results\SEP_prediction_results_FC_S_12.csv 
+[2022-06-17 12:15:09] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_12.csv 
+Running classification test type: FC_S  training for h = 24 hour ahead
+testing data file: data/events_fc_testing_24.csv
+[2022-06-17 12:15:09] Building model for: default_models\sep_model_fc_24hr\model_weights 
+[2022-06-17 12:15:10] Loading weights from: default_models\sep_model_fc_24hr\model_weights 
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_4 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_2 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_3 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_1 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_5 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_1 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:15:12] Saving result to file: results\SEP_prediction_results_FC_S_24.csv 
+[2022-06-17 12:15:12] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_24.csv 
+Running classification test type: FC_S  training for h = 36 hour ahead
+testing data file: data/events_fc_testing_36.csv
+[2022-06-17 12:15:12] Building model for: default_models\sep_model_fc_36hr\model_weights 
+[2022-06-17 12:15:13] Loading weights from: default_models\sep_model_fc_36hr\model_weights 
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_7 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_4 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_5 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_2 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_2 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:15:14] Saving result to file: results\SEP_prediction_results_FC_S_36.csv 
+[2022-06-17 12:15:14] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_36.csv 
+Running classification test type: FC_S  training for h = 48 hour ahead
+testing data file: data/events_fc_testing_48.csv
+[2022-06-17 12:15:14] Building model for: default_models\sep_model_fc_48hr\model_weights 
+[2022-06-17 12:15:15] Loading weights from: default_models\sep_model_fc_48hr\model_weights 
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_10 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_6 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_7 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_3 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_11 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_3 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:15:17] Saving result to file: results\SEP_prediction_results_FC_S_48.csv 
+[2022-06-17 12:15:17] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_48.csv 
+Running classification test type: FC_S  training for h = 60 hour ahead
+testing data file: data/events_fc_testing_60.csv
+[2022-06-17 12:15:17] Building model for: default_models\sep_model_fc_60hr\model_weights 
+[2022-06-17 12:15:18] Loading weights from: default_models\sep_model_fc_60hr\model_weights 
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_13 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_8 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_9 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_4 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_14 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_4 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:15:20] Saving result to file: results\SEP_prediction_results_FC_S_60.csv 
+[2022-06-17 12:15:20] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_60.csv 
+Running classification test type: FC_S  training for h = 72 hour ahead
+testing data file: data/events_fc_testing_72.csv
+Error: Model weights directory does not exist: default_models\sep_model_fc_72hr 
+Test default models for first classification type FC_S and for all time windows: 12 to 72..
+Running classification test type: FC_S  training for h = 12 hour ahead
+testing data file: data/events_fc_testing_12.csv
+[2022-06-17 12:20:40] Building model for: default_models\sep_model_fc_12hr\model_weights 
+[2022-06-17 12:20:41] Loading weights from: default_models\sep_model_fc_12hr\model_weights 
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_16 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_10 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_11 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_5 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_17 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_5 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:43] Saving result to file: results\SEP_prediction_results_FC_S_12.csv 
+[2022-06-17 12:20:43] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_12.csv 
+Running classification test type: FC_S  training for h = 24 hour ahead
+testing data file: data/events_fc_testing_24.csv
+[2022-06-17 12:20:43] Building model for: default_models\sep_model_fc_24hr\model_weights 
+[2022-06-17 12:20:44] Loading weights from: default_models\sep_model_fc_24hr\model_weights 
+Model: "model_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_7 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_19 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_12 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_13 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_6 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_20 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_6 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:45] Saving result to file: results\SEP_prediction_results_FC_S_24.csv 
+[2022-06-17 12:20:45] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_24.csv 
+Running classification test type: FC_S  training for h = 36 hour ahead
+testing data file: data/events_fc_testing_36.csv
+[2022-06-17 12:20:45] Building model for: default_models\sep_model_fc_36hr\model_weights 
+[2022-06-17 12:20:46] Loading weights from: default_models\sep_model_fc_36hr\model_weights 
+Model: "model_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_8 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_22 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_14 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_15 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_7 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_23 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_7 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:47] Saving result to file: results\SEP_prediction_results_FC_S_36.csv 
+[2022-06-17 12:20:47] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_36.csv 
+Running classification test type: FC_S  training for h = 48 hour ahead
+testing data file: data/events_fc_testing_48.csv
+[2022-06-17 12:20:47] Building model for: default_models\sep_model_fc_48hr\model_weights 
+[2022-06-17 12:20:48] Loading weights from: default_models\sep_model_fc_48hr\model_weights 
+Model: "model_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_9 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_25 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_16 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_17 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_8 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_26 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_8 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:50] Saving result to file: results\SEP_prediction_results_FC_S_48.csv 
+[2022-06-17 12:20:50] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_48.csv 
+Running classification test type: FC_S  training for h = 60 hour ahead
+testing data file: data/events_fc_testing_60.csv
+[2022-06-17 12:20:50] Building model for: default_models\sep_model_fc_60hr\model_weights 
+[2022-06-17 12:20:50] Loading weights from: default_models\sep_model_fc_60hr\model_weights 
+Model: "model_9"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_10 (InputLayer)       [(None, 12, 14)]          0         
+                                                                 
+ dense_28 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_18 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_19 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_9 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_29 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_9 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:52] Saving result to file: results\SEP_prediction_results_FC_S_60.csv 
+[2022-06-17 12:20:52] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_60.csv 
+Running classification test type: FC_S  training for h = 72 hour ahead
+testing data file: data/events_fc_testing_72.csv
+[2022-06-17 12:20:52] Building model for: default_models\sep_model_fc_72hr\model_weights 
+[2022-06-17 12:20:53] Loading weights from: default_models\sep_model_fc_72hr\model_weights 
+Model: "model_10"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_11 (InputLayer)       [(None, 12, 14)]          0         
+                                                                 
+ dense_31 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_20 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_21 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_10 (Flatten)        (None, 200)               0         
+                                                                 
+ dense_32 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_10 (Bat  (None, 1)                4         
+ chNormalization)                                                
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:20:55] Saving result to file: results\SEP_prediction_results_FC_S_72.csv 
+[2022-06-17 12:20:55] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_72.csv 
+Test default models for first classification type FC_S and for all time windows: 12 to 72..
+Running classification test type: FC_S  training for h = 12 hour ahead
+testing data file: data/events_fc_testing_12.csv
+[2022-06-17 12:48:28] Building model for: default_models\sep_model_fc_12hr\model_weights 
+[2022-06-17 12:48:30] Loading weights from: default_models\sep_model_fc_12hr\model_weights 
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_1 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_1 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional (Bidirectiona  (None, 12, 800)          1603200   
+ l)                                                              
+                                                                 
+ bidirectional_1 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten (Flatten)           (None, 200)               0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization (BatchN  (None, 1)                4         
+ ormalization)                                                   
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:36] Saving result to file: results\SEP_prediction_results_FC_S_12.csv 
+[2022-06-17 12:48:36] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_12.csv 
+Running classification test type: FC_S  training for h = 24 hour ahead
+testing data file: data/events_fc_testing_24.csv
+[2022-06-17 12:48:36] Building model for: default_models\sep_model_fc_24hr\model_weights 
+[2022-06-17 12:48:37] Loading weights from: default_models\sep_model_fc_24hr\model_weights 
+Model: "model_1"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_2 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_4 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_2 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_3 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_1 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_5 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_1 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:39] Saving result to file: results\SEP_prediction_results_FC_S_24.csv 
+[2022-06-17 12:48:39] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_24.csv 
+Running classification test type: FC_S  training for h = 36 hour ahead
+testing data file: data/events_fc_testing_36.csv
+[2022-06-17 12:48:39] Building model for: default_models\sep_model_fc_36hr\model_weights 
+[2022-06-17 12:48:41] Loading weights from: default_models\sep_model_fc_36hr\model_weights 
+Model: "model_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_3 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_7 (Dense)             (None, 12, 100)           1500      
+                                                                 
+ bidirectional_4 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_5 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_2 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 201       
+                                                                 
+ batch_normalization_2 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:42] Saving result to file: results\SEP_prediction_results_FC_S_36.csv 
+[2022-06-17 12:48:42] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_36.csv 
+Running classification test type: FC_S  training for h = 48 hour ahead
+testing data file: data/events_fc_testing_48.csv
+[2022-06-17 12:48:42] Building model for: default_models\sep_model_fc_48hr\model_weights 
+[2022-06-17 12:48:44] Loading weights from: default_models\sep_model_fc_48hr\model_weights 
+Model: "model_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_4 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_10 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_6 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_7 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_3 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_11 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_3 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:46] Saving result to file: results\SEP_prediction_results_FC_S_48.csv 
+[2022-06-17 12:48:46] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_48.csv 
+Running classification test type: FC_S  training for h = 60 hour ahead
+testing data file: data/events_fc_testing_60.csv
+[2022-06-17 12:48:46] Building model for: default_models\sep_model_fc_60hr\model_weights 
+[2022-06-17 12:48:47] Loading weights from: default_models\sep_model_fc_60hr\model_weights 
+Model: "model_4"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_5 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_13 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_8 (Bidirectio  (None, 12, 800)          1603200   
+ nal)                                                            
+                                                                 
+ bidirectional_9 (Bidirectio  (None, 12, 200)          720800    
+ nal)                                                            
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_4 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_14 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_4 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:49] Saving result to file: results\SEP_prediction_results_FC_S_60.csv 
+[2022-06-17 12:48:49] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_60.csv 
+Running classification test type: FC_S  training for h = 72 hour ahead
+testing data file: data/events_fc_testing_72.csv
+[2022-06-17 12:48:49] Building model for: default_models\sep_model_fc_72hr\model_weights 
+[2022-06-17 12:48:50] Loading weights from: default_models\sep_model_fc_72hr\model_weights 
+Model: "model_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_6 (InputLayer)        [(None, 12, 14)]          0         
+                                                                 
+ dense_16 (Dense)            (None, 12, 100)           1500      
+                                                                 
+ bidirectional_10 (Bidirecti  (None, 12, 800)          1603200   
+ onal)                                                           
+                                                                 
+ bidirectional_11 (Bidirecti  (None, 12, 200)          720800    
+ onal)                                                           
+                                                                 
+ SEPCustomAttention (SEPAtte  (None, 200)              212       
+ ntion)                                                          
+                                                                 
+ flatten_5 (Flatten)         (None, 200)               0         
+                                                                 
+ dense_17 (Dense)            (None, 1)                 201       
+                                                                 
+ batch_normalization_5 (Batc  (None, 1)                4         
+ hNormalization)                                                 
+                                                                 
+=================================================================
+Total params: 2,325,917
+Trainable params: 2,325,915
+Non-trainable params: 2
+_________________________________________________________________
+[2022-06-17 12:48:53] Saving result to file: results\SEP_prediction_results_FC_S_72.csv 
+[2022-06-17 12:48:53] Saving the performance metrics to files: results\SEP_performance_metrics_BiLSTM_FC_S_72.csv 
